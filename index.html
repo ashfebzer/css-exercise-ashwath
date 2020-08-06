@@ -12,26 +12,141 @@
     <!--Custom stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    
-    <!-- Navigation -->
-    <div id="menu-nav">
-        <!-- logo -->
-        <div id="logo">
-            <img src="/images/shades_logo.png" alt="shades-logo">
-        </div>
-        <!-- Navigation-items -->
-        <ul>
-            <li><a href="#"><span>HOME</span></a></li>
-            <li><a href="#"><span>ABOUT</span></a></li>
-            <li><a href="#"><span>SERVICE</span></a></li>
-            <li><a href="#"><span>PORTFOLIO</span></a></li>
-            <li><a href="#"><span>BLOG</span></a></li>
-            <li><a href="#"><span>PAGES</span></a></li>
-            <li><a href="#"><span>CONTACT</span></a></li>
-        </ul>
-    </div>
+    <header>
 
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">
+                <img src="/images/shades_logo.png" alt="shades-logo">
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">HOME</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">SERVICE</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">BLOG</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">PAGES</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Header image -->
+            <!-- Slider images -->
+            <div id="slider-section">
+                <div id="slider">
+                    <figure>
+                        <img src="/images/slide-1.jpg">
+                        <img src="/images/slide-2.jpg">
+                        <img src="/images/slide-3.jpg">
+                        <img src="/images/slide-4.jpg">
+                        <img src="/images/slide-1.jpg">
+                    </figure>
+                </div>
+                <!-- Slider text -->
+                <div class="slider-text">
+                    <div>
+                        <h1>SHADES OF GRAY TO MAKE YOUR <spam>LIFE</spam> EASIER</h1>
+                    </div>
+                    <div>
+                        <button type="button">But now</button>
+                        <button type="button">Learn more</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End slider section -->
+    </header>
+    <!-- end header -->
+
+    <!-- Best section -->
+   
+        <div class="card">
+            <!-- float icon -->
+            <div class="icon-float">
+                <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                <!-- <img src="/images/icon-rocket.png"> -->
+            </div>
+            <!-- Card title -->
+            <h6>Best Resource We Have</h6>
+            <!-- Card body -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+        </div>
+
+        <!-- Responsive card -->
+        <div class="wrapper">                
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <!-- float icon -->
+                        <div class="icon-float">
+                            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                            <!-- <img src="/images/icon-rocket.png"> -->
+                        </div>
+                        <!-- Card title -->
+                        <h6>Best Resource We Have</h6>
+                        <!-- Card body -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                    </div>
+                </div>
+            
+            <div class="column">
+                <div class="card">
+                    <!-- float icon -->
+                    <div class="icon-float">
+                        <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                        <!-- <img src="/images/icon-rocket.png"> -->
+                    </div>
+                    <!-- Card title -->
+                    <h6>Best Resource We Have</h6>
+                    <!-- Card body -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                </div>
+            </div>
+          
+          <div class="column">
+            <div class="card">
+                <!-- float icon -->
+                <div class="icon-float">
+                    <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                    <!-- <img src="/images/icon-rocket.png"> -->
+                </div>
+                <!-- Card title -->
+                <h6>Best Resource We Have</h6>
+                <!-- Card body -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+            </div>
+        </div>
+            
+            </div>
+        </div>
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
