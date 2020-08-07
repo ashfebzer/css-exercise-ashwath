@@ -1,9 +1,8 @@
-/* CSS reset */
+/*****Reset*****/
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
 pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
-
-/* General rulesets */
+/*****General*****/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,9 +13,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
-/* Navigation bar */
-
+/*****Navigation*****/
 .navbar {
     font-size: 18px;
     background-color: #FAFAFA;
@@ -98,7 +95,7 @@ body {
     }
 }
 
-/* Slider section*/
+/*****Slider*****/
 #slider-section {
     position: relative;
 }
@@ -161,11 +158,11 @@ body {
     right: 118px;
 }
 
-/* The card */
+/*****best section*****/
 .card {
   position: relative;
   height: 180px;
-  background-color: #FFF;
+  background-color: #f5f5f5;
 }
 
 /* Float icon */
@@ -192,26 +189,11 @@ body {
     transition: 0.5s;
   }
 
-/* Responsive card */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-* { box-sizing: border-box; }
-
-body { 
-  font-family: 'Open Sans', sans-serif;
-  color: #666;
-}
-
-/* STRUCTURE */
-
 .wrapper {
 	padding: 5px;
 	max-width: 960px;
 	width: 95%;
 	margin: 20px auto;
-}
-header {
-	padding: 0 15px;
 }
 
 .columns {
@@ -226,11 +208,8 @@ header {
 	margin: 2px;
 	padding: 10px;
 	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-	
+	&:last-child { margin-right: 0; }	
 }
-
-
 
 @media screen and (max-width: 980px) {
   .columns .column {
@@ -252,3 +231,43 @@ header {
 		margin: 0 0 5px 0;
 	}
 }
+
+/*****why choose us*****/
+#why-choose-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choose-lt-img {
+    width: 427.99px;
+    height: 476.46px;
+    overflow: hidden;
+}
+
+.choose-main-content {
+    width: 689.16px;
+    height: 475.22px;
+}
+
+.choose-rt-img {
+    width: 324.01px;
+    height: 476.46px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
