@@ -258,7 +258,6 @@ body {
     object-fit: contain;
 }
 
-
 .row {
     display: flex;
     flex-direction: row;
@@ -323,4 +322,129 @@ body {
   .items .item {
     min-width: calc(12.5% - 10px);
   }
+}
+
+/* How we work */
+#how-we-work {
+  position: relative;
+}
+
+#how-we-work img {
+  height: 518.41px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.how-work-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 894.88px;
+  height: 345.63px;
+  background-color: #ebebeb;
+  top: 100px;
+}
+
+.how-work-items {
+  display: flex;
+}
+
+.work-list-items {
+  display: flex;
+}
+
+.work-list-icon {
+  background-color: #555555;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Quality of work */
+#quality-of-wrapper {
+  display: flex;
+}
+
+#quality-of-wrapper .left {
+  width: 633px;
+  width: 50%;
+}
+
+#quality-of-wrapper .right {
+  background-color: #EEEEEE;
+  position: relative;
+  width: 50%;
+}
+
+#quality-of-wrapper .right .right-content-wrapper {
+  z-index: 1;
+}
+
+#parallelogram {
+  width: 67px;
+  height: 100%;
+  transform: skew(-11deg);
+  background: #EEEEEE;
+  position: absolute;
+  left: -32px;
+  z-index: -1;
+}
+
+/* Portfolio */
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 23.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
