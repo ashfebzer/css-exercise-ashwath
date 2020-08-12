@@ -13,6 +13,10 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.padding-wrapper {
+  margin: 0 118px;
+}
+
 /*****Navigation*****/
 .navbar {
     font-size: 18px;
@@ -159,7 +163,7 @@ body {
 }
 
 /*****best section*****/
-.card {
+.best-section-card {
   position: relative;
   height: 180px;
   background-color: #f5f5f5;
@@ -364,6 +368,143 @@ body {
   border: 2px solid #fff;
 }
 
+/*****Meet our team*****/
+
+#name-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#name-card-wrapper .card-bg {
+  position: relative;
+}
+
+.card-bg {
+  background-color: #f5f5f5;
+  width: 586.28px;
+  height: 217.03px;
+  margin-top: 43px;
+  margin-left: 34px;
+}
+
+#name-card-wrapper .card-bg .card-left-col {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 34px;
+  z-index: 50;
+}
+
+#name-card-wrapper .card-bg .card-left-col .team-img img {
+  width: 159px;
+  height: 185px;
+  object-fit: cover;
+  border: 10px solid #e6e6e6;
+}
+
+.team-social {
+  display: flex;
+  position: relative;
+}
+
+.team-social-icons {
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 36px;
+  vertical-align: middle;
+
+  -webkit-box-shadow: 13px 11px 9px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 11px 9px -15px rgba(0,0,0,0.75);
+box-shadow: 13px 11px 9px -15px rgba(0,0,0,0.75);
+ 
+}
+
+/* Right column */
+
+#name-card-wrapper .card-bg .card-right-col {
+  margin-left: 193px;
+  z-index: -1;
+}
+
+/* Team member tags */
+#member-name-wrapper {
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform:skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+  background:#fff;
+  width:195.44px;
+  height: 51.41px;
+  line-height: 51.41px;
+  z-index:20;
+  font-size:14.4px;
+  color:#2E8DEF;
+  padding-left: 20px;
+  position:relative;
+  left: -16px;
+  top: 20px;
+}
+
+#member-name {
+  -ms-transform: skew(30deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  transform: skew(30deg, 0deg);
+}
+
+/* Team member designation */
+#designation-wrapper {
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform:skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+  background:#e6e6e6;
+  width: 150.84px;
+  height: 36.00px;
+  line-height: 36.00px;
+  z-index:20;
+  font-size:12.34px;
+  padding-left: 20px;
+  color:#2E8DEF;
+  position:relative;
+  left: -10px;
+  top: 10px;
+}
+
+#designation {
+  -ms-transform: skew(30deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  transform: skew(30deg, 0deg);
+}
+
+/* Team member description */
+
+#team-member-description {
+  position: absolute;
+  margin-left: 19px;
+  bottom: 40px
+}
+
+#team-member-description  p{
+  font-size: 14.4px;
+  color: #999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Quality of work */
 #quality-of-wrapper {
   display: flex;
@@ -396,34 +537,44 @@ body {
 
 /* Portfolio */
 
-.row {
-  margin: 10px -16px;
+#our-portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
+#myBtnContainer {
+  display: flex;
+}
+
+.portfolio-row {
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+.portfolio-column {
   float: left;
-  width: 23.33%;
   display: none; /* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
-.row:after {
+.portfolio-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Content */
-.content {
+.portfolio-content {
   background-color: white;
-  padding: 10px;
+  padding: 1px;
+}
+
+.portfolio-content img {
+  width: 300.00px;
+  height: 215.75px;
+  object-fit: cover;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -447,4 +598,180 @@ body {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+/* Best work environment */
+#work-environment-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Our Pricing */
+.pricing-wrapper {
+  display: flex;
+}
+
+.pricing-columns {
+  
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-columns {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Some fun facts */
+
+.counter-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.counters {
+	background: #2a2929;
+	color: #fff;
+	padding: 40px 20px;
+	border-top: 3px lightskyblue solid;
+}
+
+.counters .counter-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: lightskyblue;
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .counter-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .counter-container > div:nth-of-type(1),
+	.counters .counter-container > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+}
+
+
+
+/* Our Partners */
+
+#our-partners {
+  text-align: center;
+}
+
+.partners-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.partners-logo img {
+  width: 277.99px;
+  height: 118.40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****Footer****/
+
+/* Footer company info */
+footer {
+  background-color: #555555;
+}
+
+#footer-wrapper {
+  display: flex;
+}
+
+footer #footer-wrapper .footer-company-info .footer-social-icons {
+  display: flex;
+}
+
+/* Footer-address */
+
+footer #footer-wrapper .footer-company-address .footer-icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer-contact-form */
+footer #footer-wrapper .footer-contact-form .form-name {
+  display: flex;
+}
+
+#footer-copyright {
+  text-align: center;
 }
