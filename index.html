@@ -12,28 +12,26 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-
     <!--Custom stylesheet -->
-    <link rel="stylesheet" href="/css/main.css">
-
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
     <header>
-
         <!-- Navigation Bar -->
-        <nav class="navbar">
+        <nav class="navbar section-wrapper">
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fas fa-bars"></i>
             </span>
-            <a href="#" class="logo">
-                <img src="/images/shades_logo.png" alt="shades-logo">
-            </a>
+            <a href="#" class="logo"><img src="images/shades_logo.png" alt="shades-logo"></a>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="#" class="nav-links">HOME</a>
+                    <a href="index.html" class="nav-links current">HOME</a> 
                 </li>
                 <li>
                     <a href="#" class="nav-links">ABOUT</a>
@@ -62,21 +60,21 @@
             <div id="slider-section">
                 <div id="slider">
                     <figure>
-                        <img src="/images/slide-1.jpg">
-                        <img src="/images/slide-2.jpg">
-                        <img src="/images/slide-3.jpg">
-                        <img src="/images/slide-4.jpg">
-                        <img src="/images/slide-1.jpg">
+                        <img src="images/slide-1.jpg">
+                        <img src="images/slide-2.jpg">
+                        <img src="images/slide-3.jpg">
+                        <img src="images/slide-4.jpg">
+                        <img src="images/slide-1.jpg">
                     </figure>
                 </div>
                 <!-- Slider text -->
-                <div class="slider-text">
-                    <div>
-                        <h1>SHADES OF GRAY TO MAKE YOUR <spam>LIFE</spam> EASIER</h1>
+                <div class="slider-text section-wrapper">
+                    <div class="slider-text-hero-content">
+                        <h1><span class="grey-hero-text">SHADES</span> OF GRAY<br>TO MAKE YOUR <spam class="blue-hero-text">LIFE</spam><br>EASIER</h1>
                     </div>
-                    <div>
-                        <button type="button">But now</button>
-                        <button type="button">Learn more</button>
+                    <div class="slider-cta">
+                        <button type="button"><h3>But now</h3></button>
+                        <button type="button"><h3>Learn more</h3></button>
                     </div>
                 </div>
             </div>
@@ -86,45 +84,51 @@
 
 <!-- Best section -->
         <!-- Cards -->
-        <div class="wrapper padding-wrapper">                
-            <div class="columns">
+        <div class="best-section-wrapper">                
+            <div class="best-columns">
                 <!-- 1st card -->
-                <div class="column">
+                <div class="best-column">
                     <div class="best-section-card">
                         <!-- float icon -->
                         <div class="icon-float">
-                            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
                         </div>
-                        <!-- Card title -->
-                        <h6>Best Resource We Have</h6>
-                        <!-- Card body -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="card-content">
+                            <!-- Card title -->
+                            <h3>Best Resource We Have</h3>
+                            <!-- Card content -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                        </div>
                     </div>
                 </div>
                 <!-- 2nd card -->
-                <div class="column">
+                <div class="best-column">
                     <div class="best-section-card">
                         <!-- float icon -->
                         <div class="icon-float">
-                            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
                         </div>
-                        <!-- Card title -->
-                            <h6>Best Resource We Have</h6>
-                        <!-- Card body -->
+                        <div class="card-content">
+                            <!-- Card title -->
+                            <h3>Best Resource We Have</h3>
+                            <!-- Card content -->
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                        </div>
                     </div>
                 </div>
                 <!-- 3rd card -->
-                <div class="column">
+                <div class="best-column">
                     <div class="best-section-card">
                         <!-- float icon -->
                         <div class="icon-float">
-                            <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
                         </div>
-                        <!-- Card title -->
-                        <h6>Best Resource We Have</h6>
-                        <!-- Card body -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                        <div class="card-content">
+                            <!-- Card title -->
+                            <h3>Best Resource We Have</h3>
+                            <!-- Card content -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,7 +138,7 @@
 <!-- Why choose us -->
     <div id="why-choose-us">
         <div class="choose-lt-img">
-            <img src="/images/why-choose-us-right.jpg" alt="person-typing-laptop-keyboard">
+            <img src="images/why-choose-us-right.jpg" alt="person-typing-laptop-keyboard">
         </div>
         <!-- Choose-center -->
         <div class="choose-main-content">
@@ -143,7 +147,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo.</p>
             </div>
             <div class="choose-list">
-                <div class="row">
+                <div class="choose-section-row">
                     <div class="column">
                         <!-- Great design -->
                             <div class="great-design-wrapper">
@@ -151,7 +155,7 @@
 
                                 </div>
                                 <div class="great-content">
-                                    <h6>GREAT DESIGN</h6>
+                                    <h3>GREAT DESIGN</h3>
                                     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
                                 </div>
                             </div>
@@ -163,14 +167,14 @@
 
                                 </div>
                                 <div class="great-content">
-                                    <h6>GREAT DESIGN</h6>
+                                    <h3>Upto Date Skill</h3>
                                     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
                                 </div>
                             </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="choose-section-row">
                     <div class="column">
                         <!-- Great design -->
                             <div class="great-design-wrapper">
@@ -178,7 +182,7 @@
 
                                 </div>
                                 <div class="great-content">
-                                    <h6>GREAT DESIGN</h6>
+                                    <h3>Standard Coding</h3>
                                     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
                                 </div>
                             </div>
@@ -190,7 +194,7 @@
 
                                 </div>
                                 <div class="great-content">
-                                    <h6>GREAT DESIGN</h6>
+                                    <h3>Quickest Support</h3>
                                     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
                                 </div>
                             </div>
@@ -198,9 +202,8 @@
                 </div>
             </div>
         </div>
-        
         <div class="choose-rt-img">
-            <img src="/images/why-choose-us-right.jpg" alt="coffee-laptop-on-table">
+            <img src="images/why-choose-us-right.jpg" alt="coffee-laptop-on-table">
         </div>
 
     </div>
@@ -208,7 +211,7 @@
 
 <!------------------------ What we do ------------------------>
     <div class="what-we-do">
-        <h1>what-we-do</h1>
+        <h2>what we do</h2>
         <div class="items">
             <div class="item">Col-1</div>
             <div class="item">Col-2</div>
@@ -225,9 +228,9 @@
 <!------------------------ How we work ------------------------>
 
     <div id="how-we-work">
-        <img src="/images/how-we-work-bg.jpg" alt="">
+        <img src="images/how-we-work-bg.jpg" alt="">
         <div class="how-work-wrapper padding-wrapper">
-            <h1>How We Work</h1>
+            <h2>How We Work</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <!-- How we work list -->
             <div class="how-work-items">
@@ -277,7 +280,7 @@
 
 <div id="meet-our-team-wrapper">
     <!-- Title -->
-    <h1>MEET OUR TEAM</h1>
+    <h2>MEET OUR TEAM</h2>
     
     <!-- Name cards -->
     <div id="name-card-wrapper">
@@ -473,7 +476,7 @@
 
 <div id="quality-of-wrapper">
     <div class="left"> 
-      <img src="/images/devices.png" alt="">
+      <img src="images/devices.png" alt="">
     </div>
     
     
@@ -486,7 +489,7 @@
                 <!-- content -->
                 <div class="right-content-wrapper">
                     
-                    <h1>Quality Of Our Work</h1>
+                    <h2>Quality Of Our Work</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 <div>
             <!-- List-1 -->
@@ -666,7 +669,7 @@
 <!------------------------ From our blog ------------------------>
 
 <div class="blog-title">
-    <h1>From our blog</h1>
+    <h2>From our blog</h2>
 </div>
 
 <!--Carousel Wrapper-->
@@ -886,7 +889,7 @@
 <!------------------------ Some fun facts ------------------------>
 
 <div class="counters">
-    <h1>Some Fun Facts</h1>
+    <h2>Some Fun Facts</h2>
     <div class="counter-container">
       <div>
         <i class="fab fa-youtube fa-4x"></i>
@@ -916,7 +919,7 @@
 <!------------------------ Our Patners ------------------------>
 
 <div id="our-partners">
-    <h1>Our Partners</h1>
+    <h2>Our Partners</h2>
     <div class="partners-logo-wrapper">
         <!-- Logo-1 -->
         <div class="partners-logo">
@@ -1043,6 +1046,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 <!-- Javascript -->
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
